@@ -3,7 +3,7 @@ Sphero-Win-SDK
 
 Sphero SDK for Win 8.1+ using RFCOMM
 
-![sphero-apps.jpg](https://github.com/orbotix/Sphero-Android-SDK/raw/master/assets/sphero-apps.jpg)
+![sphero-apps.jpg](https://raw.github.com/orbotix/Sphero-Win-SDK/master/images/sphero-apps.jpg)
 
 # Windows 8.1 Quick Start Guide
 
