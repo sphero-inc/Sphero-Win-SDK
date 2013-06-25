@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<Page
+    x:Class="BasicDriveApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasicDriveApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+      
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Sphero Drive" VerticalAlignment="Top" FontSize="72" FontWeight="Bold"/>
+        <TextBlock x:Name="SpheroName" HorizontalAlignment="Left" Margin="82,97,0,0" TextWrapping="Wrap" Text="No Sphero Connected" VerticalAlignment="Top" FontSize="24"/>
+
+        <TextBlock x:Name="AccelerometerValues" HorizontalAlignment="Right" Margin="82,30,30,0" TextWrapping="Wrap" Text="Accelerometer" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="AccelerometerX" HorizontalAlignment="Right" Margin="82,60,30,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="AccelerometerY" HorizontalAlignment="Right" Margin="82,80,30,0" TextWrapping="Wrap" Text="y" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="AccelerometerZ" HorizontalAlignment="Right" Margin="82,100,30,0" TextWrapping="Wrap" Text="z" VerticalAlignment="Top" FontSize="14"/>
+        
+        <TextBlock x:Name="GyroscopeValues" HorizontalAlignment="Right" Margin="82,120,30,0" TextWrapping="Wrap" Text="Gyroscope" VerticalAlignment="Top" FontSize="24"/>
+        <TextBlock x:Name="GyroscopeX" HorizontalAlignment="Right" Margin="82,150,30,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="GyroscopeY" HorizontalAlignment="Right" Margin="82,170,30,0" TextWrapping="Wrap" Text="y" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="GyroscopeZ" HorizontalAlignment="Right" Margin="82,190,30,0" TextWrapping="Wrap" Text="z" VerticalAlignment="Top" FontSize="14"/>
+
+        <Grid HorizontalAlignment="Right" Height="512" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="512">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/DriveWheel/gfx_driveorb.tif"/>
+            </Grid.Background>
+            <Image x:Name="Puck" HorizontalAlignment="Center" Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="200" Source="Assets/DriveWheel/gfx_joystick.png"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="512" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="512" RenderTransformOrigin="0.5,0.5">
+            <Grid.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/ColorWheel/colorwheel.png"/>
+            </Grid.Background>
+            <Image x:Name="ColorPuck" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Center" Width="100" Source="Assets/DriveWheel/gfx_joystick.png"/>
+        </Grid>
+
+        <ToggleSwitch x:Name="ConnectionToggle" HorizontalAlignment="Left" Margin="76,122,0,0" VerticalAlignment="Top" Toggled="ConnectionToggle_Toggled" />
+
+        <Grid HorizontalAlignment="Center" Height="512" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="512">
+            <Image x:Name="CalibrateTarget" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="100" Source="Assets/CalibrateWheel/btn_calibrate_up.tif"/>
+            <Grid x:Name="CalibrateRotationRoot" HorizontalAlignment="Center" Height="512" Margin="0,0,0,0" VerticalAlignment="Center" Width="512">                
+                <Image x:Name="CalibrateRingOuter" Visibility="Collapsed" HorizontalAlignment="Center" Height="460" Margin="0,0,0,0" VerticalAlignment="Center" Width="460" Source="Assets/CalibrateWheel/gfx_calibrate-outer.png"/>
+                <Image x:Name="CalibrateRingMiddle" Visibility="Collapsed" HorizontalAlignment="Center" Height="450" Margin="0,0,0,0" VerticalAlignment="Center" Width="450" Source="Assets/CalibrateWheel/gfx_calibrate-inner.png"/>
+                <Image x:Name="CalibrateRingInner" Visibility="Collapsed" HorizontalAlignment="Center" Height="360" Margin="0,0,0,0" VerticalAlignment="Center" Width="360" Source="Assets/CalibrateWheel/gfx_calibrate-outer.png"/>
+                <Image x:Name="CalibrationFingerPoint" Visibility="Collapsed" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="100" Source="Assets/CalibrateWheel/gfx_calibrate-touch.png"/>
+            </Grid>
+        </Grid>        
+
+    </Grid>
+</Page>

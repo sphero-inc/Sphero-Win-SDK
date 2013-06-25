@@ -1,0 +1,3 @@
+MainPackage=C:\Users\Michael\Development\WINDOWS-PLAYGROUND\BasicDriveApp\BasicDriveApp\bin\Debug\BasicDriveApp_1.0.0.1_Bundle\BasicDriveApp_1.0.0.1_AnyCPU_Debug.appx
+SymbolPackage=C:\Users\Michael\Development\WINDOWS-PLAYGROUND\BasicDriveApp\BasicDriveApp\AppPackages\BasicDriveApp_1.0.0.1_Debug_Test\BasicDriveApp_1.0.0.1_AnyCPU_Debug.appxsym
+ResourcePack=C:\Users\Michael\Development\WINDOWS-PLAYGROUND\BasicDriveApp\BasicDriveApp\bin\Debug\BasicDriveApp_1.0.0.1_Bundle\BasicDriveApp_1.0.0.1_scale-180.appx
