@@ -25,7 +25,12 @@ From within your solution on Visual Studio 2013
     <li>Choose "Browse" and select the RobotKit.dll</li>
     </ol>
 
-
+## Update Manifest
+    <wb:DeviceCapability Name="bluetooth.rfcomm">
+      <wb:Device Id="any">
+        <wb:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" />
+      </wb:Device>
+    </wb:DeviceCapability>
 
 ## Discovering & Connecting Sphero
 
