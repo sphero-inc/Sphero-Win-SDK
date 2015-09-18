@@ -211,6 +211,5 @@ namespace BasicDriveApp
         private void OnCollisionDetected(object sender, CollisionData data) {
             Debug.WriteLine("Wall collision was detected");
         }
-
     }
 }
