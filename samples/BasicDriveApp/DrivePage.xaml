@@ -47,7 +47,7 @@
                 <Image x:Name="CalibrateRingInner" Visibility="Collapsed" HorizontalAlignment="Center" Height="360" Margin="0,0,0,0" VerticalAlignment="Center" Width="360" Source="Assets/CalibrateWheel/gfx_calibrate-outer.png"/>
                 <Image x:Name="CalibrationFingerPoint" Visibility="Collapsed" HorizontalAlignment="Center" Height="100" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="100" Source="Assets/CalibrateWheel/gfx_calibrate-touch.png"/>
             </Grid>
-        </Grid>        
+        </Grid>
 
     </Grid>
 </Page>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:wb="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="1c299fe1-c7cd-402c-8799-f93d6f534c55" Publisher="CN=WindowsSdk_2" Version="1.0.0.1" />
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="2b720a77-0eef-450a-a2ff-c61e853edbba" Publisher="CN=Kristian" Version="1.0.0.2" />
   <Properties>
     <DisplayName>BasicDriveApp</DisplayName>
-    <PublisherDisplayName>WindowsSdk_2</PublisherDisplayName>
+    <PublisherDisplayName>Kristian</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,22 +15,17 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="BasicDriveApp.App">
-      <wb:VisualElements DisplayName="SpheroDrive" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="BasicDriveApp" ForegroundText="light" BackgroundColor="#464646">
-        <wb:DefaultTile Square310x310Logo="Assets\Square310x310Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" Square70x70Logo="Assets\Square70x70Logo.png" />
-        <wb:SplashScreen Image="Assets\SplashScreen.png" />
-        <wb:InitialRotationPreference>
-          <wb:Rotation Preference="landscape" />
-          <wb:Rotation Preference="landscapeFlipped" />
-        </wb:InitialRotationPreference>
-      </wb:VisualElements>
+      <m2:VisualElements DisplayName="BasicDriveApp" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="BasicDriveApp" ForegroundText="light" BackgroundColor="#464646">
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+      </m2:VisualElements>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
-    <wb:DeviceCapability Name="bluetooth.rfcomm">
-      <wb:Device Id="any">
-        <wb:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" />
-      </wb:Device>
-    </wb:DeviceCapability>
+    <m2:DeviceCapability Name="bluetooth.rfcomm">
+      <m2:Device Id="any">
+        <m2:Function Type="serviceId:00001101-0000-1000-8000-00805F9B34FB" />
+      </m2:Device>
+    </m2:DeviceCapability>
   </Capabilities>
 </Package>
